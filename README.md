@@ -218,7 +218,7 @@ Every `UncertaintyImputer` configuration beats MICE and mean imputation. Expecte
 
 **Update rule.** The `update_rule` parameter controls how the acquisition score affects the imputed value:
 
-- `'acquisition_weighted'` (default) — imputed value is `previous + α·(mean − previous)`, where `α ∈ [0, 1]` is the min-max-normalised acquisition score within the column. High-acquisition cells move aggressively toward the model's prediction; low-acquisition cells stay closer to their previous value. Different acquisition functions therefore produce genuinely different imputations.
+- `'acquisition_weighted'` (default) - imputed value is `previous + α·(mean − previous)`, where `α ∈ [0, 1]` is the min-max-normalised acquisition score within the column. High-acquisition cells move aggressively toward the model's prediction; low-acquisition cells stay closer to their previous value. Different acquisition functions therefore produce genuinely different imputations.
 - `'mean'` — imputed value is always the predictive mean. The acquisition score is recorded in `uncertainty_` but does not alter the update. All three acquisitions produce identical imputations; only the recorded scores differ. Use this when you want acquisition purely as an audit signal.
 - `'sample'` — imputed value is drawn from `N(mean, std)`, giving classical "proper multiple imputation" semantics.
 
