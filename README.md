@@ -1,5 +1,4 @@
 # uncertainty-imputation
-<<<<<<< HEAD
 
 **Uncertainty-aware iterative imputation for tabular data, guided by acquisition functions.**
 
@@ -291,6 +290,3 @@ If this library supports your research, please cite the original paper:
   publisher={Springer}
 }
 ```
-=======
-Uncertainty-aware iterative imputation for tabular data, guided by acquisition functions.
->>>>>>> e6cf6b0929d227ed4cc71dfab69223350ec10e20
